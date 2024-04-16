@@ -27,6 +27,7 @@ class DynamicFormScreenState extends State<DynamicFormScreen> {
   @override
   void initState() {
     Provider.of<DynamicFromProvider>(context,listen: false).fetchData();
+    Provider.of<DynamicFromProvider>(context,listen: false).checkConnectivity();
     super.initState();
   }
 
